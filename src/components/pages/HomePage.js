@@ -9,6 +9,27 @@ import { useNavigate } from "react-router-dom";
 
 /* import { loadUsersThunk } from "../../redux/thunks/allUsersThunks"; */
 
+const Container = styled.main`
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: large;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+const Heading = styled.h1`
+  padding-bottom: 100px;
+  font-size: 60px;
+`;
+
+const Band = styled.div`
+  padding-bottom: 100px;
+`;
+
 const HomePage = () => {
   const navigate = useNavigate();
   /* const dispatch = useDispatch();
@@ -18,27 +39,6 @@ const HomePage = () => {
   }, [dispatch]); */
 
   /* const theUser = useSelector((state) => state.user); */
-
-  const Container = styled.main`
-    width: 100%;
-    text-align: center;
-    color: #fff;
-    font-size: large;
-    padding-top: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  `;
-
-  const Heading = styled.h1`
-    padding-bottom: 100px;
-    font-size: 60px;
-  `;
-
-  const Band = styled.div`
-    padding-bottom: 100px;
-  `;
 
   return (
     <>
