@@ -22,7 +22,6 @@ const HomePage = () => {
   const Container = styled.main`
     width: 100%;
     text-align: center;
-    background-color: #212375;
     color: #fff;
     font-size: large;
     padding-top: 100px;

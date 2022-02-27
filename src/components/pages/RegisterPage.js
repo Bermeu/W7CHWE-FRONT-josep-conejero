@@ -1,6 +1,7 @@
 /* import { useSelector } from "react-redux"; */
 /* import { useNavigate } from "react-router-dom"; */
 /* import LoginForm from "../forms/LoginForm"; */
+import styled from "styled-components";
 
 const RegisterPage = () => {
   /* let navigate = useNavigate();
@@ -13,10 +14,33 @@ const RegisterPage = () => {
     navigate("/home");
   } */
 
+  const Container = styled.main`
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: large;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  `;
+
+  const Heading = styled.h1`
+    padding-bottom: 100px;
+    font-size: 60px;
+  `;
+
+  const Band = styled.div`
+    padding-bottom: 100px;
+  `;
+
   return (
-    <div>
-      <p>REGISTER PAGE</p>
-    </div>
+    <Container>
+      <Heading>REGISTER PAGE</Heading>
+
+      <Band></Band>
+    </Container>
   );
 };
 
